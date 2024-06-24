@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuppenHaus</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/header-logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <script src="./script.js"></script>
+    <script src="./templates.js"></script>
+</head>
+
+<body onload="Start()">
+    <div class="container">
+        <header>
+            <img class="headerlogo" src="./img/header-logo.png">
+            <h1>SuppenHaus</h1>
+        </header>
+        <div class="coverimg"> </div>
+
+        <section class="name-container">
+            <h2>SuppenHaus</h2>
+            <div class="bewertung">
+                <img class="star" src="./img/star_full.png" alt="">
+                <img class="star" src="./img/star_full.png" alt="">
+                <img class="star" src="./img/star_full.png" alt="">
+                <img class="star" src="./img/star_full.png" alt="">
+                <img class="star" src="./img/star_half.png" alt="">
+                <span>121 Bewertungen</span>
+            </div>
+
+        </section>
+
+        <div class="ourmenu">
+            <h3>Unser Angebot:</h3>
+            <div class="warenkorb" id="reswarenkorb">
+                <div class="res1">
+                        <div class="baskethead">
+                            <span>Warenkorb</span>
+
+                        </div>
+                        
+                        <div id="fullpricewindow" class="fullprice"></div>
+                
+                         <div id="basket"></div>
+                         <span class="close hidden-mobile" onclick="closeCart()">Schließen</span>
+            </div>
+            </div>
+            <div id="menuposts"></div>
+
+
+
+
+        </div>
+    </div>
+    <footer>
+        <img class="headerlogo" src="./img/header-logo.png">
+
+        <a class="desktop-show" href="#">Startseite</a>
+        <a class="desktop-show" href="#">Datenschutz</a>
+        <a class="desktop-show" href="#">Impressum</a>
+        <a class="desktop-show" href="#">Kontakt</a>
+        <div class="social-logo">
+            <img class="social" src="././img/facebook_white.png" />
+            <img class="social" src="././img/instagram_white.png" />
+            <img class="social" src="././img/twitter_white.png" />
+        </div>
+    </footer>
+    </section>
+
+    </div>
+    <button onclick="showBasket()" class="orderbtn hidden-mobile">Warenkorb</button>
+
+    
+</body>
+
+</html>
