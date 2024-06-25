@@ -92,7 +92,7 @@
     }
 
 
-    .warenkorb.show {
+    .warenkorb .show {
         display: block;
     }
 
@@ -376,5 +376,42 @@
         justify-content: space-between;
         flex-direction: column;
     }
+
+}
+
+@media (max-width: 1600px) {
+
+    .warenkorb {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, );
+        z-index: 1000;
+        overflow: auto;
+    }
+
+
+
+    .desktop-show {
+        display: none;
+    }
+
+    .warenkorb.show {
+        display: block;
+    }
+
+    .angaben span {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+    }
+
+
+
+
+
 
 }
